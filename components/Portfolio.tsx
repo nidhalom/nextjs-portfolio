@@ -55,10 +55,10 @@ export default function Portfolio() {
           <ul className="grid">
             {projects.map((p) => (
               <li key={p.repo} className="card">
-                <h3><a href={`${GITHUB}/${p.repo}`}>{p.repo}</a></h3>
+                <h3><a href={`${GITHUB}/${p.path ?? p.repo}`}>{p.repo}</a></h3>
                 <p>{p.blurb[lang]}</p>
                 <p className="tags">{p.tags.map((t) => <span key={t}>{t}</span>)}</p>
-                <a className="more" href={`${GITHUB}/${p.repo}`}>{ui.viewRepo[lang]}</a>
+                <a className="more" href={`${GITHUB}/${p.path ?? p.repo}`}>{ui.viewRepo[lang]}</a>
               </li>
             ))}
           </ul>

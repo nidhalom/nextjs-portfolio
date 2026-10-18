@@ -27,7 +27,7 @@ export const ui = {
   toggle: { en: "Français", fr: "English" } satisfies L,
 };
 
-export type Project = { repo: string; tags: string[]; blurb: L };
+export type Project = { repo: string; path?: string; tags: string[]; blurb: L };
 
 // Blurbs are kept deliberately descriptive and modest; see each repository's README for details.
 export const projects: Project[] = [
@@ -36,9 +36,9 @@ export const projects: Project[] = [
   { repo: "adpilot-media-buyer-agent", tags: ["Agent", "Media buying"], blurb: { en: "Agent that analyses an ads export and recommends what to kill or scale. Recommends only; never touches a live account.", fr: "Agent qui analyse un export publicitaire et recommande quoi couper ou accélérer. Il recommande seulement et ne touche jamais à un compte réel." } },
   { repo: "dzshop-agent", tags: ["Agent", "E-commerce"], blurb: { en: "Customer-service and COD order agent for small Algerian shops (Darija, Arabic, French), built against a mock backend.", fr: "Agent de service client et de commandes COD pour petites boutiques algériennes (darija, arabe, français), sur un backend simulé." } },
   { repo: "sandbox-research", tags: ["Research", "Python"], blurb: { en: "Crypto strategy research engine: survivorship-free backtests, pre-registered experiments, independent audits.", fr: "Moteur de recherche de stratégies crypto : backtests sans biais de survie, expériences pré-enregistrées, audits indépendants." } },
-  { repo: "gold-price-forecast", tags: ["Forecasting"], blurb: { en: "Gold price forecasting experiments.", fr: "Expériences de prévision du prix de l'or." } },
-  { repo: "eegnet-pytorch", tags: ["PyTorch", "EEG"], blurb: { en: "Clean PyTorch reimplementation of EEGNet with group-wise splits and a window-leakage demo.", fr: "Réimplémentation PyTorch d'EEGNet avec découpage par groupes et démonstration de fuite entre fenêtres." } },
-  { repo: "go-url-shortener", tags: ["Go", "Backend"], blurb: { en: "URL shortener in Go: base62 IDs, click counting, expiry, per-IP rate limiting, pluggable store.", fr: "Raccourcisseur d'URL en Go : identifiants base62, comptage de clics, expiration, limitation par IP, stockage interchangeable." } },
+  { repo: "gold-price-forecast", path: "ai-engineering-lab/tree/main/ml/gold-price-forecast", tags: ["Forecasting"], blurb: { en: "Gold price forecasting experiments.", fr: "Expériences de prévision du prix de l'or." } },
+  { repo: "eegnet-pytorch", path: "ai-engineering-lab/tree/main/eeg-bci/eegnet-pytorch", tags: ["PyTorch", "EEG"], blurb: { en: "Clean PyTorch reimplementation of EEGNet with group-wise splits and a window-leakage demo.", fr: "Réimplémentation PyTorch d'EEGNet avec découpage par groupes et démonstration de fuite entre fenêtres." } },
+  { repo: "go-url-shortener", path: "go-backend-lab/tree/main/go-url-shortener", tags: ["Go", "Backend"], blurb: { en: "URL shortener in Go: base62 IDs, click counting, expiry, per-IP rate limiting, pluggable store.", fr: "Raccourcisseur d'URL en Go : identifiants base62, comptage de clics, expiration, limitation par IP, stockage interchangeable." } },
 ];
 
 export type Job = { role: L; org: L; period: L; note?: L };
