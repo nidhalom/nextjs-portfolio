@@ -45,7 +45,7 @@ export const projects: Project[] = [
 export type Job = { role: L; org: L; period: L; note?: L };
 
 export const experience: Job[] = [
-  { role: { en: "Full-Stack Engineer", fr: "Ingénieur Full-Stack" }, org: { en: "Government agency", fr: "Agence gouvernementale" }, period: { en: "Dec 2025 - present", fr: "Déc. 2025 - aujourd'hui" }, note: { en: "Go backend and Next.js frontend.", fr: "Backend Go et frontend Next.js." } },
+  { role: { en: "Full-Stack Engineer", fr: "Ingénieur Full-Stack" }, org: { en: "CNRC, Algeria's National Trade Register Centre (public institution, Ministry of Commerce)", fr: "CNRC, Centre National du Registre de Commerce (établissement public, ministère du Commerce)" }, period: { en: "Dec 2025 - present", fr: "Déc. 2025 - aujourd'hui" }, note: { en: "Go backend and Next.js frontend.", fr: "Backend Go et frontend Next.js." } },
   { role: { en: "Part-time Lecturer, Technical English", fr: "Enseignant vacataire, anglais technique" }, org: { en: "USTHB", fr: "USTHB" }, period: { en: "Sep 2025 - present", fr: "Sept. 2025 - aujourd'hui" } },
   { role: { en: "Freelance Media Buyer", fr: "Media buyer freelance" }, org: { en: "Self-employed", fr: "Indépendant" }, period: { en: "2022 - 2025", fr: "2022 - 2025" } },
 ];
